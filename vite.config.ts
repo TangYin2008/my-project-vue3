@@ -6,6 +6,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -29,6 +31,10 @@ export default defineConfig({
         'vue-router',
         '@vueuse/core',
       ],
+    }),
+    Components({
+      dts: true,
+      resolvers: [ElementPlusResolver()],
     }),
   ],
   resolve: {

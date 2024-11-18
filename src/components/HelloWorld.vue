@@ -6,6 +6,7 @@ const { x, y, isOutside } = useMouseInElement(target)
 
 <template>
   <div ref="target" class="w-50 h-50 border-gray border-solid border-1">
+    <el-button type="primary">提交</el-button>
     <p>x: {{ x }}</p>
     <p>y: {{ y }}</p>
     <p>isOutside: {{ isOutside }}</p>
