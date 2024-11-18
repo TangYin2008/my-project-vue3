@@ -1,41 +1,15 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+const target = ref(null)
+// tracks mouse position
+const { x, y, isOutside } = useMouseInElement(target)
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
-    </h3>
+  <div ref="target" class="w-50 h-50 border-gray border-solid border-1">
+    <p>x: {{ x }}</p>
+    <p>y: {{ y }}</p>
+    <p>isOutside: {{ isOutside }}</p>
   </div>
 </template>
 
-<style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
-</style>
+<style scoped></style>
