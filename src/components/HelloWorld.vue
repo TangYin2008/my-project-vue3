@@ -10,6 +10,7 @@ const { x, y, isOutside } = useMouseInElement(target)
     <p>x: {{ x }}</p>
     <p>y: {{ y }}</p>
     <p>isOutside: {{ isOutside }}</p>
+    <icon-mdi-account style="color: red; font-size: 1.5rem" />
   </div>
 </template>
 
