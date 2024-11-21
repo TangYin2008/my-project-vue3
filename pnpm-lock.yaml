@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@unocss/reset':
+    specifier: ^0.64.1
+    version: 0.64.1
   pinia:
     specifier: ^2.2.6
     version: 2.2.6(typescript@5.6.3)(vue@3.5.12)
@@ -1640,7 +1643,6 @@ packages:
 
   /@unocss/reset@0.64.1:
     resolution: {integrity: sha512-xx36rWcrIpyvI1l/v+szQLrxWAgsmk6GH85QQ5iE1qccQbL9IlhWHB1KEd3cRbJ1TFeZ2Mzca/qsjg0LU9ZVnA==}
-    dev: true
 
   /@unocss/rule-utils@0.64.1:
     resolution: {integrity: sha512-h+Du0lezKHmdsEsGQGAtGrwrTrU+Av4eij46UzpzuNWFq0mAouBu8m/lgBI1AcY9B0Jg3EJalkOgA06tAKS8jg==}
