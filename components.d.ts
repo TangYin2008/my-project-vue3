@@ -8,13 +8,16 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Container: typeof import('./src/components/Container.vue')['default']
+    Content: typeof import('./src/views/Home/components/Content.vue')['default']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElRow: typeof import('element-plus/es')['ElRow']
-    FixedTips: typeof import('./src/components/home/FixedTips.vue')['default']
+    FixedTips: typeof import('./src/views/Home/components/FixedTips.vue')['default']
+    Footer: typeof import('./src/views/Home/components/Footer.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HomePage: typeof import('./src/views/Home/HomePage.vue')['default']
     HomeTips: typeof import('./src/components/home/FixedTips.vue')['default']
     IconMdiAccount: typeof import('~icons/mdi/account')['default']
-    LogoTitle: typeof import('./src/components/Home/LogoTitle.vue')['default']
+    LogoTitle: typeof import('./src/views/Home/components/LogoTitle.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
