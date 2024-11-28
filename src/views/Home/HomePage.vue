@@ -1,4 +1,3 @@
-<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 // 1. 按需导入 接口
 import { getArticleList } from '@/api/home'
@@ -28,7 +27,7 @@ onMounted(() => {
       <!-- 主体 -->
       <Content :listData="listData"></Content>
       <!-- 尾部 -->
-      <Footer></Footer>
     </Container>
+    <FooterFixed></FooterFixed>
   </main>
 </template>
