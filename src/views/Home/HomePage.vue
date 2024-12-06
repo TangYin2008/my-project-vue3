@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
+  <main class="relative top-0 left-0">
     <!-- Tips小组件 -->
     <FixedTips></FixedTips>
     <Container>
@@ -25,7 +25,7 @@ onMounted(() => {
       <LogoTitle></LogoTitle>
       <hr />
       <!-- 主体 -->
-      <Content :listData="listData"></Content>
+      <ContentGrid :listData="listData"></ContentGrid>
       <!-- 尾部 -->
     </Container>
     <FooterFixed></FooterFixed>
